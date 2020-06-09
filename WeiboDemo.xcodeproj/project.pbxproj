@@ -13,6 +13,7 @@
 		A52C010E248F3B4E00B45FEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A52C010D248F3B4E00B45FEF /* Assets.xcassets */; };
 		A52C0111248F3B4E00B45FEF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A52C0110248F3B4E00B45FEF /* Preview Assets.xcassets */; };
 		A52C0114248F3B4E00B45FEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A52C0112248F3B4E00B45FEF /* LaunchScreen.storyboard */; };
+		A52C011C248F530F00B45FEF /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52C011B248F530F00B45FEF /* PostCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		A52C0110248F3B4E00B45FEF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A52C0113248F3B4E00B45FEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A52C0115248F3B4E00B45FEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A52C011B248F530F00B45FEF /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				A52C0107248F3B4200B45FEF /* AppDelegate.swift */,
 				A52C0109248F3B4200B45FEF /* SceneDelegate.swift */,
 				A52C010B248F3B4200B45FEF /* ContentView.swift */,
+				A52C011B248F530F00B45FEF /* PostCell.swift */,
 				A52C010D248F3B4E00B45FEF /* Assets.xcassets */,
 				A52C0112248F3B4E00B45FEF /* LaunchScreen.storyboard */,
 				A52C0115248F3B4E00B45FEF /* Info.plist */,
@@ -149,6 +152,7 @@
 				A52C0108248F3B4200B45FEF /* AppDelegate.swift in Sources */,
 				A52C010A248F3B4200B45FEF /* SceneDelegate.swift in Sources */,
 				A52C010C248F3B4200B45FEF /* ContentView.swift in Sources */,
+				A52C011C248F530F00B45FEF /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
