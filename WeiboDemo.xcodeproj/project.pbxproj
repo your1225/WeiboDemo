@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		A52C0108248F3B4200B45FEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52C0107248F3B4200B45FEF /* AppDelegate.swift */; };
 		A52C010A248F3B4200B45FEF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52C0109248F3B4200B45FEF /* SceneDelegate.swift */; };
-		A52C010C248F3B4200B45FEF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52C010B248F3B4200B45FEF /* ContentView.swift */; };
 		A52C010E248F3B4E00B45FEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A52C010D248F3B4E00B45FEF /* Assets.xcassets */; };
 		A52C0111248F3B4E00B45FEF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A52C0110248F3B4E00B45FEF /* Preview Assets.xcassets */; };
 		A52C0114248F3B4E00B45FEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A52C0112248F3B4E00B45FEF /* LaunchScreen.storyboard */; };
@@ -107,13 +106,15 @@
 		A52C01D52490B2DB00B45FEF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52C01D42490B2DB00B45FEF /* HomeView.swift */; };
 		A52C01D72490B59800B45FEF /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52C01D62490B59800B45FEF /* UserData.swift */; };
 		A52C01F92490C55D00B45FEF /* HScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52C01F82490C55D00B45FEF /* HScrollViewController.swift */; };
+		A52C01FB2491DE8900B45FEF /* CommentInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52C01FA2491DE8900B45FEF /* CommentInputView.swift */; };
+		A52C01FD2491FEA500B45FEF /* CommentTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52C01FC2491FEA500B45FEF /* CommentTextView.swift */; };
+		A52C01FF2492026C00B45FEF /* KeyboardResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52C01FE2492026C00B45FEF /* KeyboardResponder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A52C0104248F3B4200B45FEF /* WeiboDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeiboDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A52C0107248F3B4200B45FEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A52C0109248F3B4200B45FEF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A52C010B248F3B4200B45FEF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A52C010D248F3B4E00B45FEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A52C0110248F3B4E00B45FEF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A52C0113248F3B4E00B45FEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -212,6 +213,9 @@
 		A52C01D42490B2DB00B45FEF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		A52C01D62490B59800B45FEF /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		A52C01F82490C55D00B45FEF /* HScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HScrollViewController.swift; sourceTree = "<group>"; };
+		A52C01FA2491DE8900B45FEF /* CommentInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentInputView.swift; sourceTree = "<group>"; };
+		A52C01FC2491FEA500B45FEF /* CommentTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTextView.swift; sourceTree = "<group>"; };
+		A52C01FE2492026C00B45FEF /* KeyboardResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardResponder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -248,7 +252,6 @@
 				A52C0107248F3B4200B45FEF /* AppDelegate.swift */,
 				A52C0109248F3B4200B45FEF /* SceneDelegate.swift */,
 				A52C01C8248F643700B45FEF /* Post.swift */,
-				A52C010B248F3B4200B45FEF /* ContentView.swift */,
 				A52C01D42490B2DB00B45FEF /* HomeView.swift */,
 				A52C01D22490A90C00B45FEF /* HomeNavigationBar.swift */,
 				A52C011B248F530F00B45FEF /* PostCell.swift */,
@@ -258,6 +261,9 @@
 				A52C01CA2490755900B45FEF /* PostCellToolbarButton.swift */,
 				A52C01D62490B59800B45FEF /* UserData.swift */,
 				A52C01D02490A6EF00B45FEF /* PostDetailView.swift */,
+				A52C01FA2491DE8900B45FEF /* CommentInputView.swift */,
+				A52C01FE2492026C00B45FEF /* KeyboardResponder.swift */,
+				A52C01FC2491FEA500B45FEF /* CommentTextView.swift */,
 				A52C01C4248F623200B45FEF /* PostVIPBadge.swift */,
 				A52C010D248F3B4E00B45FEF /* Assets.xcassets */,
 				A52C0112248F3B4E00B45FEF /* LaunchScreen.storyboard */,
@@ -523,12 +529,14 @@
 				A52C0108248F3B4200B45FEF /* AppDelegate.swift in Sources */,
 				A52C01F92490C55D00B45FEF /* HScrollViewController.swift in Sources */,
 				A52C01D12490A6EF00B45FEF /* PostDetailView.swift in Sources */,
+				A52C01FD2491FEA500B45FEF /* CommentTextView.swift in Sources */,
+				A52C01FF2492026C00B45FEF /* KeyboardResponder.swift in Sources */,
 				A52C010A248F3B4200B45FEF /* SceneDelegate.swift in Sources */,
 				A52C01CD24907BE700B45FEF /* PostListView.swift in Sources */,
-				A52C010C248F3B4200B45FEF /* ContentView.swift in Sources */,
 				A52C01CB2490755900B45FEF /* PostCellToolbarButton.swift in Sources */,
 				A52C01C9248F643700B45FEF /* Post.swift in Sources */,
 				A52C01D32490A90C00B45FEF /* HomeNavigationBar.swift in Sources */,
+				A52C01FB2491DE8900B45FEF /* CommentInputView.swift in Sources */,
 				A52C011C248F530F00B45FEF /* PostCell.swift in Sources */,
 				A52C01D52490B2DB00B45FEF /* HomeView.swift in Sources */,
 				A52C01CF2490871700B45FEF /* PostImageCell.swift in Sources */,

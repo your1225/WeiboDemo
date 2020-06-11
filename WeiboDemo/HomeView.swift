@@ -32,11 +32,12 @@ struct HomeView: View {
             .navigationBarItems(leading: HomeNavigationBar(leftPercent: $leftPercent))
             .navigationBarTitle("首页", displayMode: .inline)
         }
+    .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        HomeView().environmentObject(UserData())
     }
 }

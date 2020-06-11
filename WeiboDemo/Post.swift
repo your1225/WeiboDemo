@@ -22,7 +22,7 @@ struct Post: Codable, Identifiable {
     let name: String
     let date: String
     
-    let isFollowed: Bool
+    var isFollowed: Bool
     
     let text: String
     let images: [String]
@@ -50,7 +50,7 @@ extension Post {
     }
 }
 
-let postList = loadPostListData("PostListData_recommend_1.json")
+//let postList = loadPostListData("PostListData_recommend_1.json")
 
 func loadPostListData(_ fileName: String) -> PostList {
     guard let url = Bundle.main.url(forResource: fileName, withExtension: nil) else {

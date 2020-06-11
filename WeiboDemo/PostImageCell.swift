@@ -65,7 +65,7 @@ struct PostImageCellRow: View {
 
 struct PostImageCell_Previews: PreviewProvider {
     static var previews: some View {
-        let images = postList.list[0].images
+        let images = UserData().recommendPostList.list[0].images
         let width = UIScreen.main.bounds.width
         return Group {
             PostImageCell(images: Array(images[0...0]), width: width)
