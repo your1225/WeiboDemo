@@ -12,6 +12,9 @@ class UserData: ObservableObject {
     //用@Published里的属性改变时，用到的View就会更新
     @Published var recommendPostList: PostList = loadPostListData("PostListData_recommend_1.json")
     @Published var hotPostList: PostList = loadPostListData("PostListData_hot_1.json")
+    @Published var isRefeshing: Bool = false
+    @Published var isLoadingMore: Bool = false
+    @Published var loadingError: Error?
     
     private var recommendPostDic: [Int: Int] = [:] //id: index
     private var hotPostDic: [Int: Int] = [:] //id: index
@@ -33,6 +36,9 @@ enum PostListCategory {
 }
 
 extension UserData {
+    var showLoadingError: Bool { loadingError != nil }
+    var loadingErrorText: String { loadingError?.localizedDescription ?? "" }
+    
     func postList(for category: PostListCategory) -> PostList {
         switch category {
         case .recommend:

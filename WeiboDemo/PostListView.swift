@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import BBSwiftUIKit
 
 struct PostListView: View {
     let category: PostListCategory
@@ -23,18 +24,47 @@ struct PostListView: View {
     @EnvironmentObject var userData: UserData
     
     var body: some View {
-        List {
-            ForEach(userData.postList(for: category).list) { it in
-                ZStack{
-                    PostCell(post: it)
-                    NavigationLink(destination: PostDetailView(post: it)) {
-                        EmptyView()
-                    }
-                    .hidden()
-                }
-                .listRowInsets(EdgeInsets())
+        BBTableView(userData.postList(for: category).list) { it in
+            NavigationLink(destination: PostDetailView(post: it)) {
+                PostCell(post: it)
+            }
+            .buttonStyle(OriginalButtonStyle())
+        }
+        .bb_setupRefreshControl{ control in
+            control.attributedTitle = NSAttributedString(string: "加载中...")
+        }
+        .bb_pullDownToRefresh(isRefreshing: $userData.isRefeshing) {
+            print("Refresh")
+            self.userData.loadingError = NSError(domain: "", code: 0, userInfo: [NSLocalizedDescriptionKey: "Error"])
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                self.userData.isRefeshing = false
+                self.userData.loadingError = nil
             }
         }
+        .bb_pullUpToLoadMore(bottomSpace: 30) {
+            if self.userData.isLoadingMore { return }
+            self.userData.isLoadingMore = true
+            print("Load more")
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                self.userData.isLoadingMore = false
+            }
+        }
+        .overlay(
+            Text(userData.loadingErrorText)
+                .bold()
+                .frame(width: 200)
+                .padding()
+                .background(
+                    RoundedRectangle(cornerRadius: 10)
+                        .foregroundColor(.white)
+                        .opacity(0.8)
+                )
+                .animation(nil)
+                .scaleEffect(userData.showLoadingError ? 1 : 0.5)
+                .animation(.spring(dampingFraction: 0.5))  //回弹动画对上面的放大缩小有用
+                .opacity(userData.showLoadingError ? 1 : 0)
+                .animation(.easeInOut)
+        )
     }
 }
 

@@ -3,10 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A52A3F542499BA7D00E1CDC3 /* BBSwiftUIKit in Frameworks */ = {isa = PBXBuildFile; productRef = A52A3F532499BA7D00E1CDC3 /* BBSwiftUIKit */; };
+		A52A3F572499BB1100E1CDC3 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A52A3F562499BB1100E1CDC3 /* Alamofire */; };
+		A52A3F5A2499BB7900E1CDC3 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = A52A3F592499BB7900E1CDC3 /* AlamofireImage */; };
+		A52A3F5C2499C0D000E1CDC3 /* OriginalButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52A3F5B2499C0D000E1CDC3 /* OriginalButtonStyle.swift */; };
 		A52C0108248F3B4200B45FEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52C0107248F3B4200B45FEF /* AppDelegate.swift */; };
 		A52C010A248F3B4200B45FEF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52C0109248F3B4200B45FEF /* SceneDelegate.swift */; };
 		A52C010E248F3B4E00B45FEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A52C010D248F3B4E00B45FEF /* Assets.xcassets */; };
@@ -112,6 +116,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A52A3F5B2499C0D000E1CDC3 /* OriginalButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OriginalButtonStyle.swift; sourceTree = "<group>"; };
 		A52C0104248F3B4200B45FEF /* WeiboDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeiboDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A52C0107248F3B4200B45FEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A52C0109248F3B4200B45FEF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -223,6 +228,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A52A3F542499BA7D00E1CDC3 /* BBSwiftUIKit in Frameworks */,
+				A52A3F572499BB1100E1CDC3 /* Alamofire in Frameworks */,
+				A52A3F5A2499BB7900E1CDC3 /* AlamofireImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +265,7 @@
 				A52C011B248F530F00B45FEF /* PostCell.swift */,
 				A52C01CC24907BE700B45FEF /* PostListView.swift */,
 				A52C01F82490C55D00B45FEF /* HScrollViewController.swift */,
+				A52A3F5B2499C0D000E1CDC3 /* OriginalButtonStyle.swift */,
 				A52C01CE2490871700B45FEF /* PostImageCell.swift */,
 				A52C01CA2490755900B45FEF /* PostCellToolbarButton.swift */,
 				A52C01D62490B59800B45FEF /* UserData.swift */,
@@ -387,6 +396,11 @@
 			dependencies = (
 			);
 			name = WeiboDemo;
+			packageProductDependencies = (
+				A52A3F532499BA7D00E1CDC3 /* BBSwiftUIKit */,
+				A52A3F562499BB1100E1CDC3 /* Alamofire */,
+				A52A3F592499BB7900E1CDC3 /* AlamofireImage */,
+			);
 			productName = WeiboDemo;
 			productReference = A52C0104248F3B4200B45FEF /* WeiboDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -415,6 +429,11 @@
 				Base,
 			);
 			mainGroup = A52C00FB248F3B4200B45FEF;
+			packageReferences = (
+				A52A3F522499BA7D00E1CDC3 /* XCRemoteSwiftPackageReference "BBSwiftUIKit" */,
+				A52A3F552499BB1100E1CDC3 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				A52A3F582499BB7900E1CDC3 /* XCRemoteSwiftPackageReference "AlamofireImage" */,
+			);
 			productRefGroup = A52C0105248F3B4200B45FEF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -530,6 +549,7 @@
 				A52C01F92490C55D00B45FEF /* HScrollViewController.swift in Sources */,
 				A52C01D12490A6EF00B45FEF /* PostDetailView.swift in Sources */,
 				A52C01FD2491FEA500B45FEF /* CommentTextView.swift in Sources */,
+				A52A3F5C2499C0D000E1CDC3 /* OriginalButtonStyle.swift in Sources */,
 				A52C01FF2492026C00B45FEF /* KeyboardResponder.swift in Sources */,
 				A52C010A248F3B4200B45FEF /* SceneDelegate.swift in Sources */,
 				A52C01CD24907BE700B45FEF /* PostListView.swift in Sources */,
@@ -732,6 +752,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A52A3F522499BA7D00E1CDC3 /* XCRemoteSwiftPackageReference "BBSwiftUIKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Silence-GitHub/BBSwiftUIKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
+		A52A3F552499BB1100E1CDC3 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.1;
+			};
+		};
+		A52A3F582499BB7900E1CDC3 /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A52A3F532499BA7D00E1CDC3 /* BBSwiftUIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A52A3F522499BA7D00E1CDC3 /* XCRemoteSwiftPackageReference "BBSwiftUIKit" */;
+			productName = BBSwiftUIKit;
+		};
+		A52A3F562499BB1100E1CDC3 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A52A3F552499BB1100E1CDC3 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		A52A3F592499BB7900E1CDC3 /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A52A3F582499BB7900E1CDC3 /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A52C00FC248F3B4200B45FEF /* Project object */;
 }

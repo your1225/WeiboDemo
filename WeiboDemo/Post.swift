@@ -32,6 +32,12 @@ struct Post: Codable, Identifiable {
     var isLiked: Bool
 }
 
+extension Post: Equatable {
+    static func == (lhs: Self, rhs: Self) -> Bool {
+        lhs.id == rhs.id
+    }
+}
+
 extension Post {
     var avatarImage: Image {
         return loadImage(name: avatar)
